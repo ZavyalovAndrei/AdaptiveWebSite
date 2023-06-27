@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="/sources/img/favicon.png"
+      type="image/png"
+    />
+    <link rel="icon" href="/sources/img/favicon.png" type="Image/png" />
     <title>NOEMI</title>
   </head>
   <body>
@@ -29,6 +35,26 @@
               </svg>
             </a>
             <nav>
+              <input type="checkbox" id="burger" />
+              <label for="burger"
+                ><svg
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 22 22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_429_11066)">
+                    <path
+                      d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                      class="burger-img"
+                      stroke="#ffffff"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </label>
               <ul class="header-nav">
                 <li><a class="header-link" href="#0">главная</a></li>
                 <li><a class="header-link" href="#0">посты</a></li>
@@ -105,7 +131,7 @@
             <div class="main-article-text">
               <ul class="main-categories">
                 <li><a class="main-category" href="#0">Travel</a></li>
-                <li><a class="main-category" href="#0">Healt</a></li>
+                <li><a class="main-category" href="#0">Health</a></li>
               </ul>
               <a href="#0">
                 <h2 class="main-article-name">
@@ -382,11 +408,18 @@
         <h2 class="capture-title">Наши изделия</h2>
         <ul class="products-list">
           <li class="product-card">
-            <img
-              class="products-container product-img"
-              src="/sources/img/shop-item-desk1.jpg"
-              alt="shop-item1"
-            />
+            <picture class="products-container product-img">
+              <source
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="/sources/img/shop-item-tablet1.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="/sources/img/shop-item-mobile1.jpg"
+              />
+              <img src="/sources/img/shop-item-desk1.jpg" alt="shop-item1" />
+            </picture>
+
             <div class="products-info-border">
               <div class="products-container">
                 <h3 class="products-header">Подушки на диван</h3>
@@ -405,11 +438,17 @@
             </div>
           </li>
           <li class="product-card">
-            <img
-              class="products-container product-img"
-              src="/sources/img/shop-item-desk2.jpg"
-              alt="shop-item2"
-            />
+            <picture class="products-container product-img">
+              <source
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="/sources/img/shop-item-tablet2.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="/sources/img/shop-item-mobile2.jpg"
+              />
+              <img src="/sources/img/shop-item-desk2.jpg" alt="shop-item2" />
+            </picture>
             <div class="products-info-border">
               <div class="products-container">
                 <h3 class="products-header">Кукла «Зайчик»</h3>
@@ -430,11 +469,17 @@
             </div>
           </li>
           <li class="product-card">
-            <img
-              class="products-container product-img"
-              src="/sources/img/shop-item-desk3.jpg"
-              alt="shop-item3"
-            />
+            <picture class="products-container product-img">
+              <source
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="/sources/img/shop-item-tablet3.jpg"
+              />
+              <source
+                media="(max-width: 640px)"
+                srcset="/sources/img/shop-item-mobile3.jpg"
+              />
+              <img src="/sources/img/shop-item-desk3.jpg" alt="shop-item3" />
+            </picture>
             <div class="products-info-border">
               <div class="products-container">
                 <h3 class="products-header">Шестиугольная рамка</h3>
@@ -458,6 +503,21 @@
       </div>
       <div class="popup-container">
         <form action="text" class="popup-form">
+          <input type="checkbox" id="x-button" />
+          <label for="x-button" title="закрыть"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 441 441"
+            >
+              <path
+                class="x-img"
+                fill="#fff"
+                stroke="#fff"
+                d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"
+              />
+            </svg>
+          </label>
           <h2 class="capture-title">Ваш фидбек</h2>
           <div class="form-group">
             <div class="select-group popup-group">
@@ -494,7 +554,7 @@
             </div>
             <div class=".popup-group text-group">
               <span class="form-label"
-                >Расскажите, какой контент вы хотели бы видеть <br />на нашем
+                >Расскажите, какой контент вы хотели бы видеть на нашем
                 сайте?</span
               >
               <textarea
