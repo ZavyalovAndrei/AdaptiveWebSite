@@ -410,11 +410,12 @@
           <li class="product-card">
             <picture class="products-container product-img">
               <source
-                media="(min-width: 641px) and (max-width: 1199px)"
+                media="(min-width: 641px) and (max-width: 1199px) and (orientation: portrait),
+                (max-width: 640px) and (orientation: landscape)"
                 srcset="/sources/img/shop-item-tablet1.jpg"
               />
               <source
-                media="(max-width: 640px)"
+                media="(max-width: 640px) and (orientation: portrait)"
                 srcset="/sources/img/shop-item-mobile1.jpg"
               />
               <img src="/sources/img/shop-item-desk1.jpg" alt="shop-item1" />
@@ -440,11 +441,12 @@
           <li class="product-card">
             <picture class="products-container product-img">
               <source
-                media="(min-width: 641px) and (max-width: 1199px)"
+                media="(min-width: 641px) and (max-width: 1199px) and (orientation: portrait),
+                (max-width: 640px) and (orientation: landscape)"
                 srcset="/sources/img/shop-item-tablet2.jpg"
               />
               <source
-                media="(max-width: 640px)"
+                media="(max-width: 640px) and (orientation: portrait)"
                 srcset="/sources/img/shop-item-mobile2.jpg"
               />
               <img src="/sources/img/shop-item-desk2.jpg" alt="shop-item2" />
@@ -471,11 +473,12 @@
           <li class="product-card">
             <picture class="products-container product-img">
               <source
-                media="(min-width: 641px) and (max-width: 1199px)"
+                media="(min-width: 641px) and (max-width: 1199px) and (orientation: portrait),
+                (max-width: 640px) and (orientation: landscape)"
                 srcset="/sources/img/shop-item-tablet3.jpg"
               />
               <source
-                media="(max-width: 640px)"
+                media="(max-width: 640px) and (orientation: portrait)"
                 srcset="/sources/img/shop-item-mobile3.jpg"
               />
               <img src="/sources/img/shop-item-desk3.jpg" alt="shop-item3" />
@@ -501,7 +504,7 @@
           </li>
         </ul>
       </div>
-      <div class="popup-container">
+      <div class="popup-container hidden-content">
         <form action="text" class="popup-form">
           <input type="checkbox" id="x-button" />
           <label for="x-button" title="закрыть"

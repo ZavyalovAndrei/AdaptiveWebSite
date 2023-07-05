@@ -825,8 +825,19 @@ body {
   }
 
   .trand-img-box {
-    --trend-articles-quantity: 2;
     max-height: 247px;
+  }
+
+  @media (orientation: portrait) {
+    .trand-img-box {
+      --trend-articles-quantity: 2;
+    }
+  }
+
+  @media (orientation: landscape) {
+    .trand-img-box {
+      --trend-articles-quantity: 4;
+    }
   }
 
   .main-wrp {
@@ -991,8 +1002,19 @@ body {
     padding-top: 32px;
   }
 
+  @media (orientation: portrait) {
+    .trand-img-box {
+      --trend-articles-quantity: 1;
+    }
+  }
+
+  @media (orientation: landscape) {
+    .trand-img-box {
+      --trend-articles-quantity: 2;
+    }
+  }
+
   .trand-img-box {
-    --trend-articles-quantity: 1;
     max-height: 231px;
   }
 
